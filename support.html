@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>凪 — サポート</title>
+<style>
+  :root{
+    color-scheme: light;
+    --paper:#F5F7FA; --raise:#FFFFFF; --ink:#121A2C; --muted:#5C6B85;
+    --faint:#8A97AC; --line:#DCE2EC; --accent:#22617F; --accent-soft:rgba(34,97,127,.09);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      color-scheme: dark;
+      --paper:#0A1122; --raise:#101A31; --ink:#E9EDF5; --muted:#97A5BD;
+      --faint:#7482A0; --line:rgba(255,255,255,.10); --accent:#8ECBE6;
+      --accent-soft:rgba(142,203,230,.10);
+    }
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",system-ui,-apple-system,sans-serif;
+    font-size:16px; line-height:1.95; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{ max-width:680px; margin:0 auto; padding:0 20px 96px; }
+
+  header{ padding:72px 0 0; }
+  .mark{ font-size:38px; font-weight:600; letter-spacing:.3em; text-indent:.3em; text-align:center; line-height:1; }
+  .horizon{ position:relative; height:26px; margin-top:24px; }
+  .horizon::before{
+    content:""; position:absolute; left:0; right:0; top:13px; height:1px;
+    background:linear-gradient(90deg,transparent,var(--line) 12%,var(--line) 88%,transparent);
+  }
+  .horizon::after{
+    content:""; position:absolute; left:50%; top:9px; width:9px; height:9px;
+    margin-left:-4.5px; border-radius:50%; background:var(--accent);
+    box-shadow:0 0 0 5px var(--accent-soft), 0 0 16px 2px var(--accent-soft);
+  }
+  .doctype{ text-align:center; margin-top:18px; font-size:13px; letter-spacing:.22em; color:var(--faint); }
+
+  h2{ font-size:19px; font-weight:600; margin:52px 0 0; padding-bottom:12px; border-bottom:1px solid var(--line); }
+  h3{ font-size:16px; font-weight:600; margin:30px 0 0; }
+  p{ margin:14px 0 0; color:var(--muted); }
+  p strong{ color:var(--ink); font-weight:500; }
+  ol, ul{ margin:14px 0 0 1.3em; color:var(--muted); }
+  li{ margin-top:8px; }
+
+  .contact{
+    margin-top:22px; padding:22px; border-radius:14px;
+    background:var(--accent-soft); border:1px solid var(--line);
+  }
+  .addr{
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:17px; color:var(--ink); user-select:all; margin-top:8px;
+  }
+  .todo{ display:inline-block; font-size:11px; letter-spacing:.14em; color:#B4541F; font-weight:700; }
+  @media (prefers-color-scheme: dark){ .todo{ color:#F0A277; } }
+
+  .en{ margin-top:64px; padding-top:32px; border-top:1px solid var(--line); }
+  .en p, .en li{ font-size:14.5px; }
+  footer{ margin-top:56px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--faint); }
+  a{ color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="mark">凪</div>
+  <div class="horizon"></div>
+  <div class="doctype">サポート</div>
+</header>
+
+<h2>よくある質問</h2>
+
+<h3>音が鳴りません</h3>
+<p>
+  iPhone 横の<strong>消音スイッチ</strong>と、音量をご確認ください。
+  凪は「消音モードでも鳴らす」設定にはしていないため、消音中は音が出ません。
+</p>
+<p>
+  ほかの音楽アプリが鳴っている場合は、そちらを止めてから凪を再生してください。
+</p>
+
+<h3>30 分で止まってしまいます</h3>
+<p>
+  無料でお使いの場合、1 回の再生は 30 分で静かに停止します。残り時間は画面の下に表示しています。
+</p>
+<p>
+  もう一度再生ボタンを押せば、また 30 分お聴きいただけます。1 日の上限ではありません。
+  止まらずに流し続けるには <strong>凪 Pro</strong> をご利用ください。
+</p>
+
+<h3>購入したのに Pro になりません</h3>
+<p>
+  課金画面を開いて<strong>「購入を復元」</strong>を押してください。
+  機種変更や再インストールのあとは、この操作が必要です。
+</p>
+<p>
+  それでも戻らない場合は、App Store にサインインしている Apple ID が購入時と同じかご確認ください。
+</p>
+
+<h3>定期購読を解約したい</h3>
+<ol>
+  <li>iPhone の「設定」を開く</li>
+  <li>いちばん上の自分の名前（Apple ID）をタップ</li>
+  <li>「サブスクリプション」をタップ</li>
+  <li>「凪」を選んで「サブスクリプションをキャンセル」</li>
+</ol>
+<p>
+  無料体験中の場合、<strong>体験期間が終わる 24 時間前まで</strong>に解約すれば料金はかかりません。
+  解約後も、支払い済みの期間が終わるまではお使いいただけます。
+</p>
+
+<h3>電池の減りが気になります</h3>
+<p>
+  画面に触らずにいると、10 秒で描画を減らし、30 秒でほぼ真っ暗にします。音は鳴り続けます。
+  朝まで流す場合も、この状態なら消費はわずかです。
+</p>
+<p>
+  さらに抑えたい場合は、再生を始めてから画面を消してください。背景でも鳴り続けます。
+</p>
+
+<h3>通知が来ません</h3>
+<p>
+  「つづける」画面で「毎日知らせる」が入になっているかご確認ください。
+  そのうえで、iPhone の「設定」→「凪」→「通知」が許可されているかもご確認ください。
+</p>
+<p>
+  通知は<strong>音を鳴らしません</strong>。就寝前に鳴ると困るためです。
+</p>
+
+<h3>ウィジェットの数字が増えません</h3>
+<p>
+  連続日数は、<strong>1 分以上聴いた日</strong>にだけ記録されます。開いて閉じただけでは数えません。
+</p>
+
+<h3>同じ音をもう一度聴きたい</h3>
+<p>
+  再生中に「棚に残す」を押すと保存されます。画面下の「棚」からいつでも呼び戻せます。
+</p>
+
+<h2>お問い合わせ</h2>
+<div class="contact">
+  
+  <div class="addr">nagi.support.app@gmail.com</div>
+  <p style="margin-top:14px; font-size:14px;">
+    不具合のご報告には、iPhone の機種と iOS のバージョン、どの音の世界で起きたかを添えていただけると助かります。
+  </p>
+</div>
+
+<div class="en">
+  <h2 style="margin-top:0">Support (English)</h2>
+  <p><strong>No sound?</strong> Check the silent switch and volume. Nagi does not override silent mode.</p>
+  <p><strong>Playback stops after 30 minutes?</strong> That is the free session limit. Press play again, or subscribe to Nagi Pro for unlimited playback.</p>
+  <p><strong>Purchase not recognised?</strong> Open the Pro screen and tap “購入を復元” (Restore Purchases).</p>
+  <p><strong>Cancel a subscription:</strong> Settings → your Apple ID → Subscriptions → Nagi.</p>
+  <p>Contact: <span style="user-select:all">nagi.support.app@gmail.com</span></p>
+</div>
+
+<footer>
+  凪 / Nagi — 作業と眠りのための音楽<br>
+  <a href="privacy.html">プライバシーポリシー</a>
+</footer>
+
+</div>
+</body>
+</html>

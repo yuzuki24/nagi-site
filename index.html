@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>凪 — 作業と眠りのための音楽</title>
+<meta name="description" content="音源ファイルを一つも持たない iOS アプリ。和音も雨も焚き火も、すべてその場で合成しています。">
+<link rel="icon" href="icon.png">
+<meta property="og:title" content="凪 — 作業と眠りのための音楽">
+<meta property="og:description" content="音源ファイルを一つも持たない iOS アプリ。すべての音をその場で合成しています。">
+<meta property="og:image" content="icon.png">
+<style>
+  :root{
+    color-scheme: light;
+    --paper:#F5F7FA; --ink:#121A2C; --muted:#5C6B85; --faint:#8A97AC;
+    --line:#DCE2EC; --accent:#22617F; --accent-soft:rgba(34,97,127,.09);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      color-scheme: dark;
+      --paper:#0A1122; --ink:#E9EDF5; --muted:#97A5BD; --faint:#7482A0;
+      --line:rgba(255,255,255,.10); --accent:#8ECBE6; --accent-soft:rgba(142,203,230,.10);
+    }
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",system-ui,-apple-system,sans-serif;
+    font-size:16px; line-height:1.95; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{ max-width:620px; margin:0 auto; padding:0 20px 90px; }
+  header{ padding:88px 0 0; text-align:center; }
+  .icon{ width:112px; height:112px; border-radius:25px; display:block; margin:0 auto; }
+  h1{ font-size:27px; font-weight:600; letter-spacing:.12em; margin:28px 0 0; }
+  .tagline{ font-size:14px; color:var(--muted); letter-spacing:.1em; margin-top:10px; }
+  .lede{ margin-top:40px; color:var(--muted); }
+  .lede strong{ color:var(--ink); font-weight:500; }
+  h2{ font-size:17px; font-weight:600; margin:52px 0 0; padding-bottom:10px; border-bottom:1px solid var(--line); }
+  ul{ margin:16px 0 0 1.2em; color:var(--muted); }
+  li{ margin-top:9px; }
+  .links{ display:flex; gap:12px; flex-wrap:wrap; margin-top:36px; }
+  .links a{
+    flex:1 1 180px; text-align:center; text-decoration:none;
+    color:var(--ink); background:var(--accent-soft); border:1px solid var(--line);
+    border-radius:12px; padding:15px 18px; font-size:15px; font-weight:500;
+  }
+  .links a:hover{ border-color:var(--accent); }
+  footer{ margin-top:60px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--faint); }
+  a{ color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <img class="icon" src="icon.png" alt="凪のアイコン">
+  <h1>凪</h1>
+  <div class="tagline">作業と眠りのための音楽</div>
+</header>
+
+<p class="lede">
+  <strong>音源ファイルを一つも持っていません。</strong>
+  和音も、単音も、雨も、焚き火の爆ぜる音も、すべてその場で合成しています。
+  だから同じ音は二度と流れず、通信もせず、機内でも地下でも鳴ります。
+</p>
+
+<h2>11 の音の世界</h2>
+<ul>
+  <li>凪、Lo-Fi、ピアノ、雨、宙、弦、焚き火、波、集中</li>
+  <li>オルゴールと夜汽車は 凪 Pro で</li>
+</ul>
+
+<h2>長く流すためのもの</h2>
+<ul>
+  <li>音数も明るさも、何十分もかけてゆっくり移ろいます</li>
+  <li>5〜9 分に一度、音階そのものが別のものへ移ります</li>
+  <li>眠るための「だんだん静かに」で、45 分かけて引いていきます</li>
+  <li>触らずにいると画面を暗くします。音は鳴り続けます</li>
+</ul>
+
+<h2>集めません</h2>
+<ul>
+  <li>インターネットに接続しません</li>
+  <li>解析も広告も、第三者製の部品もありません</li>
+  <li>アプリの大きさは約 2 MB です</li>
+</ul>
+
+<div class="links">
+  <a href="privacy.html">プライバシーポリシー</a>
+  <a href="support.html">サポート</a>
+</div>
+
+<footer>
+  2026 Yuzuki Tateuchi<br>
+  お問い合わせ：<span style="user-select:all">nagi.support.app@gmail.com</span>
+</footer>
+
+</div>
+</body>
+</html>
